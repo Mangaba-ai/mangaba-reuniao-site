@@ -1,0 +1,102 @@
+/* Identidade Mangaba AI sobre o tema Start Bootstrap New Age (MIT).
+   Laranjas escurecidos no mesmo matiz da marca para passar em contraste AA:
+   #C2410C dá 4,9:1 sobre fundo claro e 5,2:1 com texto branco por cima. */
+
+:root {
+  --mg-laranja: #c2410c;
+  --mg-laranja-2: #ea580c;
+  --mg-cafe: #1e0d01;
+  --mg-texto: #402b22;
+  --mg-creme: #fff8f5;
+  --bs-body-font-family: "Open Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+}
+
+body {
+  font-family: var(--bs-body-font-family);
+  color: var(--mg-texto);
+}
+
+h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6,
+.font-alt, #mainNav .navbar-brand {
+  font-family: var(--bs-body-font-family) !important;
+  color: var(--mg-cafe);
+  letter-spacing: -0.01em;
+}
+
+h1, .display-1 { font-weight: 700; }
+.display-4 { font-weight: 600; }
+
+.bg-gradient-primary-to-secondary {
+  background: linear-gradient(45deg, var(--mg-laranja), var(--mg-laranja-2)) !important;
+}
+
+.bg-gradient-primary-to-secondary h2,
+.bg-gradient-primary-to-secondary .text-white { color: #fff !important; }
+
+.text-gradient {
+  background: -webkit-linear-gradient(var(--mg-laranja), var(--mg-laranja-2));
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.btn-primary {
+  --bs-btn-bg: var(--mg-laranja);
+  --bs-btn-border-color: var(--mg-laranja);
+  --bs-btn-hover-bg: #9a3412;
+  --bs-btn-hover-border-color: #9a3412;
+  --bs-btn-active-bg: #9a3412;
+  --bs-btn-active-border-color: #9a3412;
+}
+
+.btn-outline-dark { --bs-btn-color: var(--mg-cafe); }
+
+#mainNav .navbar-brand { display: flex; align-items: center; gap: 0.6rem; }
+#mainNav .navbar-brand img { height: 2.1rem; width: auto; }
+#mainNav .navbar-brand span { font-weight: 600; color: var(--mg-texto); border-left: 1px solid #e7d9cf; padding-left: 0.6rem; }
+#mainNav .navbar-brand:hover, #mainNav .navbar-nav .nav-item .nav-link.active { color: var(--mg-laranja); }
+
+.masthead { background-color: var(--mg-creme); }
+.masthead .masthead-device-mockup .circle .gradient-start-color,
+.features-device-mockup .circle .gradient-start-color { stop-color: var(--mg-laranja); }
+.masthead .masthead-device-mockup .circle .gradient-end-color,
+.features-device-mockup .circle .gradient-end-color { stop-color: #fdba74; }
+.masthead .masthead-device-mockup .shape-1,
+.masthead .masthead-device-mockup .shape-2 { fill: var(--mg-laranja-2); }
+
+/* Captura real do app no lugar do mockup de celular do tema. */
+/* Posicionado, como o .device do tema, para ficar acima do círculo (absoluto). */
+.masthead .masthead-device-mockup .device-wrapper { max-width: 340px; position: relative; z-index: 1; }
+.app-shot {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 18px;
+  box-shadow: 0 24px 60px rgba(30, 13, 1, 0.35), 0 4px 14px rgba(30, 13, 1, 0.2);
+}
+.app-shot-legenda { font-size: 0.8rem; color: #6b5a50; text-align: center; margin-top: 0.75rem; }
+
+.lead.text-muted, .text-muted { color: #6b5a50 !important; }
+main a, section a:not(.btn), .lead a { color: var(--mg-laranja); text-underline-offset: 3px; }
+section a:not(.btn):hover { color: #9a3412; }
+.meta-app { font-size: 0.875rem; color: #6b5a50; }
+
+/* Faixa de números medidos (no lugar do depoimento do tema). */
+.numeros .num { font-size: clamp(1.7rem, 6vw, 2.4rem); font-weight: 700; line-height: 1; color: #fff; white-space: nowrap; }
+.numeros .rot { color: rgba(255, 255, 255, 0.92); font-size: 0.95rem; margin-top: 0.4rem; }
+
+.icon-feature { font-size: 3.2rem; }
+#recursos h3 { font-size: 1.3rem; font-weight: 600; }
+
+.tabela-calibracao { font-size: 0.95rem; }
+.tabela-calibracao th { font-weight: 600; color: var(--mg-cafe); }
+.tabela-calibracao td:nth-child(2), .tabela-calibracao td:nth-child(3) { white-space: nowrap; }
+
+.privacidade .item i { font-size: 1.6rem; color: var(--mg-laranja); }
+.privacidade .item h3 { font-size: 1.1rem; font-weight: 600; }
+
+section.cta.cta-mangaba { background-image: none; padding: 7rem 0; }
+section.cta.cta-mangaba::before { display: none; }
+
+footer a { color: rgba(255, 255, 255, 0.75); }
+footer a:hover { color: #fff; }
